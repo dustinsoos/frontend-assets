@@ -28,7 +28,7 @@ export default function Cards() {
 
   return (
     <>
-      <section className="h-screen  px-8 md:px-16 lg:px-32 xl:px-64">
+      <section className="h-screen  px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 ">
         <div className="text-white  text-center flex flex-col gap-8 ">
           {cardData.map((data) => (
             <div
