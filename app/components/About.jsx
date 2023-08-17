@@ -16,7 +16,7 @@ export default function About() {
               className=" animate-pulse w-12 lg:hidden block "
             />
           </div>
-          <h4 className="pb-8 mb-8 md:mb-0 text-white text-2xl">
+          <h4 className="mb-8 md:mb-0 text-white text-2xl">
             Let's save some <span className="text-sky-500">time!</span>
           </h4>
 
