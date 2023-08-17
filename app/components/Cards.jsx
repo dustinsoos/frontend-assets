@@ -29,15 +29,30 @@ export default function Cards() {
         "Stay updated with the latest frontend tech. Access tools, frameworks, and libraries, learning how to leverage them for your projects.",
       img: "/tools-icon.svg",
     },
+
+    {
+      id: 5,
+      heading: "Cutting-edge Tools",
+      information:
+        "Stay updated with the latest frontend tech. Access tools, frameworks, and libraries, learning how to leverage them for your projects.",
+      img: "/tools-icon.svg",
+    },
+    {
+      id: 6,
+      heading: "Cutting-edge Tools",
+      information:
+        "Stay updated with the latest frontend tech. Access tools, frameworks, and libraries, learning how to leverage them for your projects.",
+      img: "/tools-icon.svg",
+    },
   ];
 
   return (
     <>
       <section className="h-screen px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 ">
-        <div className="grid pt-8  lg:pt-64">
-          <h3 className=" text-sky-500 text-3xl font-semibold grid items-end mb-8 md:mb-0 pb-8">
-            What do we offer?
-          </h3>
+        <h3 className=" text-sky-500 text-3xl font-semibold grid items-end  md:mb-0  lg:pt-32">
+          What do we offer?
+        </h3>
+        <div className="flex items-center justify-center mt-8">
           <div className="text-white   md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 ">
             {cardData.map((data) => (
               <div
