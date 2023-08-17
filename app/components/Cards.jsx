@@ -38,13 +38,13 @@ export default function Cards() {
           <h3 className=" text-sky-500 text-3xl font-semibold grid items-end mb-8 md:mb-0 pb-8">
             What do we offer?
           </h3>
-          <div className="text-white  text-center md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 ">
+          <div className="text-white   md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 ">
             {cardData.map((data) => (
               <div
                 key={data.id}
                 className="bg-slate-900 hover:scale-105 border-2 border-slate-800 hover:border-sky-500  p-4 mx-auto bg-gradient-to-r from-slate-900 from-70%  to-slate-800 to-90% rounded-xl"
               >
-                <div className="flex gap-3 items-center justify-center md:justify-start">
+                <div className="flex gap-3 items-center justify-start">
                   <img src={data.img} alt="card-icons" className="w-10" />
                   <h3 className="text-lg">{data.heading}</h3>
                 </div>
@@ -54,6 +54,7 @@ export default function Cards() {
           </div>
         </div>
       </section>
+      <hr className=" border-sky-500" />
     </>
   );
 }

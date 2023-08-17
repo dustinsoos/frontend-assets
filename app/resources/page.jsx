@@ -11,8 +11,8 @@ export default function Resources() {
         description="All the information and resources you need to help with your frontend journey!"
       />
 
-      <div className=" h-screen bg-slate-900 text-white">
-        <p>Resources</p>
+      <div className=" h-screen bg-slate-900 text-white ">
+        <p className="">Resources</p>
 
         <Search />
       </div>

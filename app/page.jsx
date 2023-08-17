@@ -1,6 +1,7 @@
 "use client";
 
 import Cards from "./components/Cards";
+import About from "./components/About";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <main className=" ">
       <NextSeo title="Home Page" description="Frontend-Assets" />
-      <header className=" h-screen bg-slate-900 text-white">
+      <header className=" h-screen bg-slate-900 text-white ">
         <div className=" px-8 md:px-16 lg:px-32 xl:px-64 flex h-screen items-center justify-between gap-4">
           <div className="text-center lg:text-left lg:w-1/3 xl:1/3 ">
             <h1 className=" text-4xl text-sky-500 font-bold mb-4">
@@ -38,6 +39,7 @@ export default function Home() {
       </header>
       <hr className=" border-sky-500" />
       <Cards />
+      <About />
     </main>
   );
 }

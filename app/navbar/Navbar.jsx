@@ -11,7 +11,7 @@ export default function Navbar() {
     { id: 3, label: "Recommend", link: "/recommend" },
   ];
   return (
-    <nav className=" bg-slate-950 px-8 md:px-16 lg:px-32 xl:px-64 text-white ">
+    <nav className=" bg-slate-950/90 px-8 md:px-16 lg:px-32 xl:px-64 text-white fixed w-full z-30">
       <ul>
         <div className=" flex justify-between ">
           <a href="/" className=" w-14 2xl:w-16  hover:opacity-80">
