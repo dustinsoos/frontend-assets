@@ -1,7 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./components/Navbar";
 import { StrictMode } from "react";
+import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         <StrictMode>
           <Navbar />
           {children}
+          <Footer />
         </StrictMode>
       </body>
     </html>

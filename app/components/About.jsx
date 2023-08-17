@@ -37,6 +37,7 @@ export default function About() {
           className=" animate-pulse w-1/4 2xl:w-1/6 hidden lg:block"
         />
       </div>
+      <hr className=" border-sky-500" />
     </section>
   );
 }
