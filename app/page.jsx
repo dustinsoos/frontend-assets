@@ -33,6 +33,7 @@ export default function Home() {
             width={500}
             height={400}
             alt="homepage-gif"
+            priority={true}
             className="hidden lg:block  rounded-3xl border-2 border-sky-500 lg:max-w-sm 2xl:max-w-md"
           />
         </div>
