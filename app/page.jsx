@@ -11,7 +11,7 @@ export default function Home() {
       <NextSeo title="Home Page" description="Frontend-Assets" />
       <header className=" h-screen bg-slate-900 text-white ">
         <div className=" px-8 md:px-16 lg:px-32 xl:px-64 flex h-screen items-center justify-between gap-4">
-          <div className="text-center lg:text-left lg:w-1/3 xl:1/3 ">
+          <div className="text-center lg:text-left lg:w-1/2 xl:w-2/5 ">
             <h1 className=" text-4xl text-sky-500 font-bold mb-4">
               Frontend-Assets
             </h1>
@@ -30,10 +30,10 @@ export default function Home() {
           </div>
           <Image
             src="/gif-homepage.gif"
-            width={600}
-            height={600}
+            width={500}
+            height={400}
             alt="homepage-gif"
-            className="hidden lg:block  h-auto rounded-3xl border-2 border-sky-500 lg:w-1/2 2xl:w-1/2 "
+            className="hidden lg:block  rounded-3xl border-2 border-sky-500 lg:max-w-sm 2xl:max-w-md"
           />
         </div>
       </header>
