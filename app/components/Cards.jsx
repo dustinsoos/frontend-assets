@@ -33,15 +33,15 @@ export default function Cards() {
 
   return (
     <>
-      <section className="h-screen px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 over">
-        <h3 className=" text-sky-500 text-3xl font-semibold pt-8 pb-8  md:mb-0  lg:pt-32">
+      <section className="h-screen px-2 md:px-16 lg:px-32 xl:px-64 bg-slate-900 ">
+        <h3 className=" text-sky-500 text-3xl font-semibold pt-8 mb-4 md:pt-8 md:pb-8  md:mb-0  lg:pt-32">
           What do we offer?
         </h3>
-        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 w-full h-screen">
+        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 w-full">
           {cardData.map((data) => (
             <div
               key={data.id}
-              className="bg-slate-900 hover:scale-105 border-2 border-slate-800 hover:border-sky-500  p-4 bg-gradient-to-r from-slate-900 from-70%  to-slate-800 to-90% rounded-xl"
+              className="bg-slate-900 hover:scale-105 border-2 border-slate-800 hover:border-sky-500 p-2 md:p-4 bg-gradient-to-r from-slate-900 from-70%  to-slate-800 to-90% rounded-xl"
             >
               <div className="flex gap-3 items-center justify-start">
                 <img src={data.img} alt="card-icons" className="w-10" />
