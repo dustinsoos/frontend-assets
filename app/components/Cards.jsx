@@ -37,7 +37,7 @@ export default function Cards() {
         <h3 className=" text-sky-500 text-3xl font-semibold pt-8 pb-8  md:mb-0  lg:pt-32">
           What do we offer?
         </h3>
-        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 w-full">
+        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-4 w-full h-screen">
           {cardData.map((data) => (
             <div
               key={data.id}
