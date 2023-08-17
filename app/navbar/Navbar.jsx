@@ -39,7 +39,7 @@ export default function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="  w-20 mx-auto grid items-center text-center gap-6 p-4">
+          <div className="  w-20 mx-auto grid items-center text-center gap-6 p-4 ">
             {navItems.map((item) => (
               <li className="" key={item.id}>
                 <a
