@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section className=" px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 pt-32 pb-32">
-      <div className=" lg:flex lg:justify-between lg:items-center">
+      <div className=" lg:flex lg:justify-around lg:items-center">
         <div className="grid lg:w-2/3">
           <div className="flex gap-4 items-center">
             <h3 className="text-sky-500 text-3xl font-semibold grid items-end   ">
@@ -33,7 +33,7 @@ export default function About() {
         <img
           src="/clock-icon.svg"
           alt="clock-icon"
-          className=" animate-pulse w-1/4 2xl:w-1/5 hidden lg:block "
+          className=" animate-pulse w-1/4 2xl:w-1/6 hidden lg:block"
         />
       </div>
     </section>
