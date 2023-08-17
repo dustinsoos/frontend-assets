@@ -38,8 +38,12 @@ export default function Home() {
         </div>
       </header>
       <hr className=" border-sky-500" />
-      <Cards />
-      <About />
+      <section>
+        <Cards />
+      </section>
+      <section>
+        <About />
+      </section>
     </main>
   );
 }
