@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className=" h-screen px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 ">
+    <section className=" py-32 px-8 md:px-16 lg:px-32 xl:px-64 bg-slate-900 ">
       <div className=" lg:flex lg:justify-around lg:items-center ">
         <div className="grid lg:w-2/3">
           <div className="flex gap-4 items-center">
