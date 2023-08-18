@@ -9,7 +9,7 @@ export default function Footer() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setEmail("");
+
     setIsSubmitted(true);
   }
 
@@ -40,17 +40,14 @@ export default function Footer() {
           <p className="text-slate-400 text-xs">
             Join to hear about new resources added!
           </p>
-          <form
-            className="grid"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            onSubmit={handleSubmit}
-          >
+          <form className="grid" onSubmit={handleSubmit}>
             <label className="pt-2 text-slate-400 text-xs">
               Enter your email:
             </label>
             <div className="flex gap-2">
               <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
                 placeholder="example@email.com"
                 required
