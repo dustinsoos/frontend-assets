@@ -24,7 +24,7 @@ export default function Recommend() {
             <label className="text-slate-200">Resource Recommendation:</label>
             <input
               className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md"
-              placeholder="MUI, TailwindCSS, MDN"
+              placeholder="MUI, TailwindCSS, MDN, Color Hunt"
               type="text"
             />
           </div>
@@ -32,7 +32,7 @@ export default function Recommend() {
             <label className="text-slate-200">Language:</label>
             <input
               className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md"
-              placeholder="HTML, CSS, JS, Framework"
+              placeholder="HTML, CSS, JS, Framework, Design, Animations"
               type="text"
             />
           </div>
