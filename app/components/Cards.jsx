@@ -34,12 +34,14 @@ export default function Cards() {
   return (
     <>
       <section className="h-screen px-2 md:px-16 lg:px-32 xl:px-64 bg-slate-900 grid grid-cols-1 md:block md:grid-cols-none">
-        <h3 className=" grid text-sky-500 text-3xl items-center font-semibold pt-8  md:pt-8  md:mb-0  lg:pt-64">
-          What do we offer?
-        </h3>
-        <h4 className=" hidden mb-4 md:pb-8  text-white text-2xl md:block">
-          We are here to <span className="text-sky-500">help!</span>
-        </h4>
+        <div className=" 2xl:ml-14 md:ml-8">
+          <h3 className="  text-sky-500 text-3xl items-center font-semibold pt-8  md:pt-8  md:mb-0  lg:pt-64">
+            What do we offer?
+          </h3>
+          <h4 className=" hidden mb-4 md:pb-8  text-white text-2xl md:block">
+            We are here to <span className="text-sky-500">help!</span>
+          </h4>
+        </div>
         <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-2 md:gap-4 w-11/12 mx-auto">
           {cardData.map((data) => (
             <div
