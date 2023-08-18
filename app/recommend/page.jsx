@@ -15,7 +15,7 @@ export default function Recommend() {
           <div className="grid ">
             <label className="text-slate-200">Name:</label>
             <input
-              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500 focus:outline-sky-500   bg-slate-900 rounded-md"
+              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500    bg-slate-900 rounded-md"
               placeholder="Your Name"
               type="text"
             />
@@ -23,7 +23,7 @@ export default function Recommend() {
           <div className="grid">
             <label className="text-slate-200">Resource Recommendation:</label>
             <input
-              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500 focus:outline-sky-500   bg-slate-900 rounded-md"
+              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500   bg-slate-900 rounded-md"
               placeholder="MUI, TailwindCSS, MDN, Color Hunt"
               type="text"
             />
@@ -31,7 +31,7 @@ export default function Recommend() {
           <div className="grid">
             <label className="text-slate-200">Language:</label>
             <input
-              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500  focus:outline-sky-500   bg-slate-900 rounded-md"
+              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500     bg-slate-900 rounded-md"
               placeholder="HTML, CSS, JS, Framework, Design, Animations"
               type="text"
             />
@@ -42,7 +42,7 @@ export default function Recommend() {
             <textarea
               rows={4}
               cols={50}
-              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500 focus:outline-sky-500   bg-slate-900 rounded-md"
+              className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500    bg-slate-900 rounded-md"
               placeholder="Your thoughts on this resource and why it helped.."
               type="text"
             />
