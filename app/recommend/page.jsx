@@ -14,8 +14,10 @@ export default function Recommend() {
   const [dataArray, setDataArray] = useState([]);
 
   const addItem = () => {
-    const newItem = { name, resource, language, textbox };
-    setDataArray((prevArray) => [...prevArray, newItem]);
+    if (name && resource && language && textbox) {
+      const newItem = { name, resource, language, textbox };
+      setDataArray((prevArray) => [...prevArray, newItem]);
+    }
   };
 
   const deleteItem = (index) => {
