@@ -41,7 +41,6 @@ export default function Footer() {
             Join to hear about new resources added!
           </p>
           <form
-            action=""
             className="grid"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -99,7 +98,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="pt-2 text-xs text-slate-400">
-            Copyright &copy; 2023 Frontend Assets
+            Copyright &copy; 2023 Dustin Soos
           </p>
         </div>
         <button onClick={scrollToTop}>
