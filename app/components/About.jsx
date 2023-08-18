@@ -2,9 +2,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="bg-slate-900 ">
+    <section className="bg-slate-900 px-8 md:px-16 lg:px-32 xl:px-64 ">
       <hr className=" border-sky-500 mb-20 w-full" />
-      <div className=" lg:flex lg:justify-around lg:items-center pb-20 px-8 md:px-16 lg:px-32 xl:px-64  ">
+      <div className=" lg:flex lg:justify-around lg:items-center pb-20   ">
         <div className="grid lg:w-2/3">
           <div className="flex gap-4 items-center">
             <h3 className="text-sky-500 text-3xl font-semibold grid items-end   ">

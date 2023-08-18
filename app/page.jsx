@@ -38,7 +38,7 @@ export default function Home() {
           />
         </div>
       </header>
-      <hr className=" border-sky-500" />
+
       <Cards />
       <About />
     </main>

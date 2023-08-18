@@ -34,6 +34,7 @@ export default function Cards() {
   return (
     <>
       <section className="h-screen px-2 md:px-16 lg:px-32 xl:px-64 bg-slate-900 grid grid-cols-1 md:block md:grid-cols-none">
+        <hr className=" border-sky-500" />
         <h3 className=" grid text-sky-500 text-3xl items-center font-semibold pt-8  md:pt-8  md:mb-0  lg:pt-64">
           What do we offer?
         </h3>
@@ -44,7 +45,7 @@ export default function Cards() {
           {cardData.map((data) => (
             <div
               key={data.id}
-              className="bg-slate-900 hover:scale-105 border-2 border-slate-800 hover:border-sky-500 p-2 md:p-4 bg-gradient-to-r from-slate-900 from-70%  to-slate-800 to-90% rounded-xl"
+              className="bg-slate-900 hover:scale-105 border-2 border-slate-800 hover:border-sky-500 p-2 md:p-4 bg-gradient-to-r from-slate-900 from-70%  to-sky-500/10 to-90% rounded-xl"
             >
               <div className="flex gap-3 items-center justify-start">
                 <img src={data.img} alt="card-icons" className="w-10" />
