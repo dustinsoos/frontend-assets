@@ -8,7 +8,7 @@ export default function About() {
         <div className="grid lg:w-2/3">
           <div className="flex gap-4 items-center">
             <h3 className="text-sky-500 text-3xl font-semibold grid items-end   ">
-              About Us
+              About us
             </h3>
             <img
               src="/clock-icon.svg"

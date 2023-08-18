@@ -34,11 +34,11 @@ export default function Footer() {
   ];
   return (
     <footer className=" bg-slate-900 text-white py-16 px-8 md:px-16 lg:px-32 xl:px-64 ">
-      <div className="grid lg:flex lg:justify-evenly items-center">
+      <div className="grid lg:flex lg:justify-between items-center">
         <div>
-          <h3 className="text-sm">Keep up to date</h3>
+          <h3 className="text-sm">Keep in the loop</h3>
           <p className="text-slate-400 text-xs">
-            Join to hear about new things added!
+            Join to hear about new resources added!
           </p>
           <form
             action=""
@@ -50,12 +50,12 @@ export default function Footer() {
             <label className="pt-2 text-slate-400 text-xs" htmlFor="email">
               Enter your email:
             </label>
-            <div className="flex gap-4">
+            <div className="flex gap-2">
               <input
                 type="email"
                 placeholder="example@email.com"
                 required
-                className="w-1/2 border-2 p-2 text-xs border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md"
+                className="w-2/3 border-2 p-2 text-xs border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md"
               />
               <button className="border px-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white rounded-md">
                 Submit
@@ -63,8 +63,8 @@ export default function Footer() {
             </div>
           </form>
           {isSubmitted && (
-            <p className=" bg-green-400 text-center w-3/4 mt-4 p-4 rounded-md text-black ">
-              Thanks for signing up for our news letter!
+            <p className=" bg-green-400 text-center w-3/4 mt-4 p-4 rounded-md text-black transition-opacity[0%] ease-out duration-1000 ">
+              You have successfully subscribed to our newsletter!
             </p>
           )}
         </div>
@@ -82,26 +82,31 @@ export default function Footer() {
             </li>
           ))}
         </div>
-        <div className=" flex gap-4 mt-4">
-          {socialItems.map((social) => (
-            <li key={social.id} className=" list-none">
-              <a target="_blank" href={social.href}>
-                <Image
-                  src={social.img}
-                  alt="social-icons"
-                  width={10}
-                  height={10}
-                  className="w-6 "
-                />
-              </a>
-            </li>
-          ))}
+        <div className="grid">
+          <div className=" flex gap-4 mt-4">
+            {socialItems.map((social) => (
+              <li key={social.id} className=" list-none">
+                <a target="_blank" href={social.href}>
+                  <Image
+                    src={social.img}
+                    alt="social-icons"
+                    width={10}
+                    height={10}
+                    className="w-6 "
+                  />
+                </a>
+              </li>
+            ))}
+          </div>
+          <p className="pt-2 text-xs text-slate-400">
+            Copyright &copy; 2023 Frontend Assets
+          </p>
         </div>
         <button onClick={scrollToTop}>
           <Image
             src="/arrow-up.svg"
             alt="arrowup-icon"
-            className="z-10 w-12 mt-8 mx-auto lg:mx-0  animate-bounce md:mt-0 "
+            className="z-10 w-10 mt-8 mx-auto lg:mx-0  animate-bounce md:mt-0 "
             width={40}
             height={40}
           ></Image>
