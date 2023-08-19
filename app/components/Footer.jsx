@@ -7,10 +7,13 @@ export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const initialPlaceholder = "example@email.com";
+
   function handleSubmit(e) {
     e.preventDefault();
 
     setIsSubmitted(true);
+    setEmail("");
   }
 
   const scrollToTop = () => {
@@ -49,7 +52,7 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
-                placeholder="example@email.com"
+                placeholder={initialPlaceholder}
                 required
                 className="w-2/3 border-2 p-2 text-xs border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md"
               />
