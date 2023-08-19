@@ -40,7 +40,7 @@ export default function Recommend() {
         title="Recommend"
         description="Recommend us new resources that will be beneficial for frontend engineers!"
       />
-      <main className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 h-screen overflow-x-auto ">
+      <main className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 pb-32 ">
         <div className="mb-12">
           <h1 className="text-center text-4xl text-sky-500 font-bold">
             We Appreciate All Input
@@ -118,7 +118,7 @@ export default function Recommend() {
         </form>
 
         {isSubmitted && (
-          <div className=" ">
+          <div className="">
             {dataArray.map((item, index) => (
               <div
                 key={index}
