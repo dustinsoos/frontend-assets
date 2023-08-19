@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className=" ">
       <NextSeo title="Home Page" description="Frontend Assets" />
-      <header className=" h-screen bg-slate-900 text-white bg-gradient-to-b from-sky-500/10 from-70%  to-slate-900/10 to-100%">
+      <header className=" min-h-screen bg-slate-900 text-white bg-gradient-to-b from-sky-500/10 from-70%  to-slate-900/10 to-100%">
         <div className=" px-8 md:px-16 lg:px-32 xl:px-64 flex h-screen items-center justify-around ">
           <div className="text-center lg:text-left lg:w-1/2 xl:w-2/5 ">
             <h1 className=" text-4xl text-sky-500 font-bold mb-4 ">

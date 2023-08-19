@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchBar({ data }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,29 +22,44 @@ export default function SearchBar({ data }) {
         purpose.toLowerCase().includes(searchText)
       );
     });
+    //Sorting the filtered data alphabetically by the "for" property
+    const sortedData = [...filtered].sort((a, b) => a.for.localeCompare(b.for));
 
-    setFilteredData(filtered);
+    setFilteredData(sortedData);
     setSearchTerm(searchText);
   };
   return (
-    <div>
-      <input
-        type="text"
-        className="text-black"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleSearch}
-      />
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="">
+      <div className="flex items-center justify-center mb-8">
+        <input
+          type="text"
+          className="w-10/12 lg:w-1/2 border-2 p-2 text-lg border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md "
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+        <img src="/images/search-icon.svg" alt="search-icon" className="w-14" />
+      </div>
+      <ul className="grid  justify-center items-center text-center grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 ">
         {filteredData.map((item, index) => (
-          <li key={index}>
-            <img src={item.img} alt={item.name} />
-            <h3>{item.name}</h3>
-            <p className="text-slate-400">{item.about}</p>
-            <p className="text-slate-400">{item.for}</p>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">
-              Site
-            </a>
+          <li key={index} className="border-2 border-sky-500 ">
+            <img
+              src={item.img}
+              alt={item.name}
+              className=" object-fill w-full"
+            />
+            <div className="p-2 grid gap-2">
+              <div className=" flex items-center gap-1 justify-center">
+                <h3>{item.name}:</h3>
+                <p className="text-slate-400">{item.for}</p>
+              </div>
+              <p className="text-slate-400">{item.about}</p>
+              <button className=" w-1/2 border  py-1 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white mx-auto">
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  Site
+                </a>
+              </button>
+            </div>
           </li>
         ))}
       </ul>

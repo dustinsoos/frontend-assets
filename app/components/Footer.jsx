@@ -36,7 +36,7 @@ export default function Footer() {
     { id: 7, img: "/linkedin.svg", href: "https://linkedin.com/" },
   ];
   return (
-    <footer className=" bg-slate-900 text-white py-16 px-8 md:px-16 lg:px-32 xl:px-64 ">
+    <footer className=" bg-slate-900 text-white py-16 px-8 md:px-16 lg:px-32 xl:px-64 bottom-0">
       <div className="grid md:grid-cols-2 md:justify-items-start md:gap-4 lg:flex lg:justify-around items-center">
         <div>
           <h3 className="text-sm">Keep in the loop</h3>
