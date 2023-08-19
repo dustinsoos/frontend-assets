@@ -148,6 +148,7 @@ export default function Recommend() {
           </div>
         )}
       </main>
+      <hr className=" border-sky-500" />
     </>
   );
 }
