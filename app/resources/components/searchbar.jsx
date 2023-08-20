@@ -40,17 +40,18 @@ export default function SearchBar({ data }) {
         />
         <img src="/images/search-icon.svg" alt="search-icon" className="w-14" />
       </div>
-      <ul className="grid  justify-center items-center text-center grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 ">
+      <ul className="grid justify-center items-center text-center grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4">
         {filteredData.map((item, index) => (
-          <li key={index} className="border-2 border-sky-500 ">
+          <li key={index} className="border-2 border-sky-500 h-full">
             <img
               src={item.img}
               alt={item.name}
+              priority={true}
               className=" object-fill w-full"
             />
             <div className="p-2 grid gap-2">
               <div className=" flex items-center gap-1 justify-center">
-                <h3>{item.name}:</h3>
+                <h3 className=" text-sky-500">{item.name}:</h3>
                 <p className="text-slate-400">{item.for}</p>
               </div>
               <p className="text-slate-400">{item.about}</p>
