@@ -78,7 +78,7 @@ export default function Recommend() {
               />
             </div>
             <div className="grid">
-              <label className="text-slate-200">Language:</label>
+              <label className="text-slate-200">Resource For:</label>
               <input
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
@@ -98,7 +98,7 @@ export default function Recommend() {
                 cols={50}
                 maxLength={150}
                 className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500    bg-slate-900 rounded-md"
-                placeholder="Your thoughts on this resource and why it helped.."
+                placeholder="Your thoughts on this resource and why it helped"
                 type="text"
                 required
               />
