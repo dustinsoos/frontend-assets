@@ -83,7 +83,7 @@ export default function Recommend() {
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
                 className="border-2 p-2 text-sm border-slate-800 hover:border-sky-500     bg-slate-900 rounded-md"
-                placeholder="HTML, CSS, JS, Framework, Design, Animations"
+                placeholder="HTML, CSS, JS, Framework, Library, Design, Animations"
                 type="text"
                 required
               />

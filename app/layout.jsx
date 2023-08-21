@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 

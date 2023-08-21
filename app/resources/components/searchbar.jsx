@@ -34,7 +34,7 @@ export default function SearchBar({ data }) {
         <input
           type="text"
           className="w-10/12 lg:w-1/2 border-2 p-2 text-lg border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md "
-          placeholder="Search..."
+          placeholder="HTML, CSS, JS, Framework, Library, Design, Animations"
           value={searchTerm}
           onChange={handleSearch}
         />
