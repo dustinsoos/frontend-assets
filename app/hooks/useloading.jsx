@@ -12,7 +12,7 @@ export default function useLoading() {
       setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem(window.location.pathname, "true");
-      }, 3000); // Set the duration in milliseconds (3 seconds in this example).
+      }, 2000);
     }
   }, []);
 
