@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import LoadingSpinner from "../components/loading";
-import { useEffect } from "react";
+import useLoading from "../hooks/useloading";
 
 export default function Recommend() {
   const [name, setName] = useState("");
@@ -36,27 +36,8 @@ export default function Recommend() {
     setTextBox("");
   }
 
-  const [isLoading, setIsLoading] = useState(true);
+  const isLoading = useLoading();
 
-  useEffect(() => {
-    // Check if the page has been loaded in this session.
-    const hasPageLoadedInSession = sessionStorage.getItem(
-      "hasPageLoadedInSession"
-    );
-
-    if (hasPageLoadedInSession) {
-      // If the page has loaded in this session, don't show the loading spinner.
-      setIsLoading(false);
-    } else {
-      // If it's the first time loading the page in this session, simulate a delay.
-      setTimeout(() => {
-        setIsLoading(false);
-
-        // Set a flag in sessionStorage to indicate that the page has loaded in this session.
-        sessionStorage.setItem("hasPageLoadedInSession", "true");
-      }, 3000); // Set the duration in milliseconds (3 seconds in this example).
-    }
-  }, []);
   return (
     <>
       {isLoading ? (

@@ -3,31 +3,9 @@
 import { NextSeo } from "next-seo";
 import SearchBar from "./components/searchbar";
 import LoadingSpinner from "../components/loading";
-import { useEffect, useState } from "react";
+import useLoading from "../hooks/useloading";
 
 export default function Resources() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Check if the page has been loaded in this session.
-    const hasPageLoadedInSession = sessionStorage.getItem(
-      "hasPageLoadedInSession"
-    );
-
-    if (hasPageLoadedInSession) {
-      // If the page has loaded in this session, don't show the loading spinner.
-      setIsLoading(false);
-    } else {
-      // If it's the first time loading the page in this session, simulate a delay.
-      setTimeout(() => {
-        setIsLoading(false);
-
-        // Set a flag in sessionStorage to indicate that the page has loaded in this session.
-        sessionStorage.setItem("hasPageLoadedInSession", "true");
-      }, 3000); // Set the duration in milliseconds (3 seconds in this example).
-    }
-  }, []);
-
   const resourceData = [
     {
       img: "/images/adobecolors.jpg",
@@ -129,6 +107,7 @@ export default function Resources() {
       url: "https://www.webfx.com/web-design/hex-to-rgb/",
     },
   ];
+  const isLoading = useLoading();
 
   return (
     <>

@@ -4,28 +4,11 @@ import Cards from "./components/Cards";
 import About from "./components/About";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { useState } from "react";
-import { useEffect } from "react";
+import useLoading from "./hooks/useloading";
 import LoadingSpinner from "./components/loading";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const hasPageLoadedInSession = sessionStorage.getItem(
-      "hasPageLoadedInSession"
-    );
-
-    if (hasPageLoadedInSession) {
-      setIsLoading(false);
-    } else {
-      setTimeout(() => {
-        setIsLoading(false);
-
-        sessionStorage.setItem("hasPageLoadedInSession", "true");
-      }, 3000);
-    }
-  }, []);
+  const isLoading = useLoading();
   return (
     <>
       {isLoading ? (
