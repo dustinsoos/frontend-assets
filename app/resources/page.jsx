@@ -2,8 +2,6 @@
 
 import { NextSeo } from "next-seo";
 import SearchBar from "./components/searchbar";
-import LoadingSpinner from "../components/loading";
-import useLoading from "../hooks/useloading";
 
 export default function Resources() {
   const resourceData = [
@@ -107,26 +105,21 @@ export default function Resources() {
       url: "https://www.webfx.com/web-design/hex-to-rgb/",
     },
   ];
-  const isLoading = useLoading();
 
   return (
     <>
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
-        <main className=" bg-slate-900 min-h-screen">
-          <div className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 h-auto pb-32">
-            <NextSeo
-              title="Resources"
-              description="All the information and resources you need to help with your frontend journey!"
-            />
+      <main className=" bg-slate-900 min-h-screen">
+        <div className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 h-auto pb-32">
+          <NextSeo
+            title="Resources"
+            description="All the information and resources you need to help with your frontend journey!"
+          />
 
-            <div className=" bg-slate-900 text-white ">
-              <SearchBar data={resourceData} />
-            </div>
+          <div className=" bg-slate-900 text-white ">
+            <SearchBar data={resourceData} />
           </div>
-        </main>
-      )}
+        </div>
+      </main>
     </>
   );
 }
