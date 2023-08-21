@@ -6,6 +6,14 @@ import SearchBar from "./components/searchbar";
 export default function Resources() {
   const resourceData = [
     {
+      img: "/images/adobecolors.jpg",
+      name: "Adobe Color",
+      about:
+        "Adobe Color Wheel provides powerful color tools, aiding frontend developers in crafting visually stunning websites",
+      for: "Design, CSS",
+      url: "https://color.adobe.com/create/color-wheel",
+    },
+    {
       img: "/images/colorhunt.jpg",
       name: "Color Hunt",
       about:
@@ -14,12 +22,12 @@ export default function Resources() {
       url: "https://colorhunt.co/",
     },
     {
-      img: "/images/google-fonts.jpg",
-      name: "Google Fonts",
+      img: "/images/collectui.jpg",
+      name: "CollectUI",
       about:
-        "Google Fonts streamlines font integration, expanding design choices for frontend developers with ease",
-      for: "Design, Fonts",
-      url: "https://fonts.google.com/",
+        "CollectUI offers design inspiration, showcasing user interface and interaction design examples",
+      for: "Design",
+      url: "https://collectui.com/",
     },
     {
       img: "/images/csscolours.jpg",
@@ -30,12 +38,12 @@ export default function Resources() {
       url: "https://colours.neilorangepeel.com/",
     },
     {
-      img: "/images/HEXtoRGB.jpg",
-      name: "WebFX",
+      img: "/images/css3buttongenerator.jpg",
+      name: "css3buttongenerator",
       about:
-        "WebFX's Hex to RGB tool simplifies color conversion, enhancing precision for frontend development",
-      for: "Design, CSS",
-      url: "https://www.webfx.com/web-design/hex-to-rgb/",
+        "CSS3 Button Generator creates custom buttons with style, color, and hover effects",
+      for: "CSS",
+      url: "https://css3buttongenerator.com/",
     },
     {
       img: "/images/cssfonts.jpg",
@@ -45,13 +53,56 @@ export default function Resources() {
       for: "Design, CSS, Fonts",
       url: "https://www.cssfontstack.com/",
     },
+
     {
-      img: "/images/adobecolors.jpg",
-      name: "Adobe Color",
+      img: "/images/fontawesome.jpg",
+      name: "Font Awesome",
       about:
-        "Adobe Color Wheel provides powerful color tools, aiding frontend developers in crafting visually stunning websites",
+        "Font Awesome offers a vast library of vector icons for web and app design",
+      for: "Design, Icons",
+      url: "https://fontawesome.com/",
+    },
+    {
+      img: "/images/frontendmentor.jpg",
+      name: "Frontendmentor",
+      about:
+        "Frontend Mentor provides real-world coding challenges to improve web development skills",
+      for: "Design, Practice",
+      url: "https://www.frontendmentor.io/",
+    },
+    {
+      img: "/images/google-fonts.jpg",
+      name: "Google Fonts",
+      about:
+        "Google Fonts streamlines font integration, expanding design choices for frontend developers with ease",
+      for: "Design, Fonts",
+      url: "https://fonts.google.com/",
+    },
+    {
+      img: "/images/webcode.jpg",
+      name: "Webcode",
+      about:
+        "Webcode.tools offers a CSS keyframe animation generator for creating dynamic web animations",
+      for: "CSS, Animations",
+      url: "https://webcode.tools/generators/css/keyframe-animation",
+    },
+
+    {
+      img: "/images/webdev.jpg",
+      name: "Web.Dev",
+      about:
+        "Web.dev provides guides for using semantic HTML to enhance website structure and accessibility",
+      for: "HTML",
+      url: "https://web.dev/learn/html/semantic-html/",
+    },
+
+    {
+      img: "/images/HEXtoRGB.jpg",
+      name: "WebFX",
+      about:
+        "WebFX's Hex to RGB tool simplifies color conversion, enhancing precision for frontend development",
       for: "Design, CSS",
-      url: "https://color.adobe.com/create/color-wheel",
+      url: "https://www.webfx.com/web-design/hex-to-rgb/",
     },
   ];
   return (

@@ -2,8 +2,6 @@
 
 import React from "react";
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchBar({ data }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,8 +20,10 @@ export default function SearchBar({ data }) {
         purpose.toLowerCase().includes(searchText)
       );
     });
-    //Sorting the filtered data alphabetically by the "for" property
-    const sortedData = [...filtered].sort((a, b) => a.for.localeCompare(b.for));
+    //Sorting the filtered data alphabetically by the "name" property
+    const sortedData = [...filtered].sort((a, b) =>
+      a.name.localeCompare(b.name)
+    );
 
     setFilteredData(sortedData);
     setSearchTerm(searchText);
