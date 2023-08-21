@@ -2,8 +2,32 @@
 
 import { NextSeo } from "next-seo";
 import SearchBar from "./components/searchbar";
+import LoadingSpinner from "../components/loading";
+import { useEffect, useState } from "react";
 
 export default function Resources() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Check if the page has been loaded in this session.
+    const hasPageLoadedInSession = sessionStorage.getItem(
+      "hasPageLoadedInSession"
+    );
+
+    if (hasPageLoadedInSession) {
+      // If the page has loaded in this session, don't show the loading spinner.
+      setIsLoading(false);
+    } else {
+      // If it's the first time loading the page in this session, simulate a delay.
+      setTimeout(() => {
+        setIsLoading(false);
+
+        // Set a flag in sessionStorage to indicate that the page has loaded in this session.
+        sessionStorage.setItem("hasPageLoadedInSession", "true");
+      }, 3000); // Set the duration in milliseconds (3 seconds in this example).
+    }
+  }, []);
+
   const resourceData = [
     {
       img: "/images/adobecolors.jpg",
@@ -105,18 +129,25 @@ export default function Resources() {
       url: "https://www.webfx.com/web-design/hex-to-rgb/",
     },
   ];
-  return (
-    <main className=" bg-slate-900 min-h-screen">
-      <div className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 h-auto pb-32">
-        <NextSeo
-          title="Resources"
-          description="All the information and resources you need to help with your frontend journey!"
-        />
 
-        <div className=" bg-slate-900 text-white ">
-          <SearchBar data={resourceData} />
-        </div>
-      </div>
-    </main>
+  return (
+    <>
+      {isLoading ? (
+        <LoadingSpinner />
+      ) : (
+        <main className=" bg-slate-900 min-h-screen">
+          <div className="bg-slate-900 text-white pt-32 px-8 md:px-16 lg:px-32 xl:px-64 h-auto pb-32">
+            <NextSeo
+              title="Resources"
+              description="All the information and resources you need to help with your frontend journey!"
+            />
+
+            <div className=" bg-slate-900 text-white ">
+              <SearchBar data={resourceData} />
+            </div>
+          </div>
+        </main>
+      )}
+    </>
   );
 }
