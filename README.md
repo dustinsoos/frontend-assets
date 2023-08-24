@@ -1,34 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Title: Frontend Assets**
+  - This project was something I was looking forward to making for a long time. As an aspiriring frontend software developer I wanted to give others who are learning or currently in the industry a platform to find/add & use the resources that I have found over the years that have helped me.
 
-## Getting Started
+**Live 🔗:** https://frontend-assets.vercel.app/
 
-First, run the development server:
+**Installation:** React, NextJS, NextSEO, TailwindCSS
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+**Usage:** This project is a frontend application that is used for the resources provided. Instead of having all of your resources in an endless folder I wanted to create a easy to search filter for specific needs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Key Features:** This project doesn't have a database but is still in development. The add your own resources is not implemented yet but having the option to use the resources provided is still there & being updated with more resources all the time.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Deployment:** I used Vercel which is a great and easy way to deploy next applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![frontendassets](https://github.com/dustinsoos/frontend-assets/assets/106705486/2de1c295-27ab-4096-92c2-fc90aa59ae59)
