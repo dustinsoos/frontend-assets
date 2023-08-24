@@ -1,4 +1,4 @@
-**Title: Frontend Assets**
+**Frontend Assets**
   - This project was something I was looking forward to making for a long time. As an aspiriring frontend software developer I wanted to give others who are learning or currently in the industry a platform to find/add & use the resources that I have found over the years that have helped me.
 
 **Live 🔗:** https://frontend-assets.vercel.app/
