@@ -1,8 +1,12 @@
+"use client";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import { StrictMode, Suspense } from "react";
+import { StrictMode } from "react";
 import Footer from "./components/Footer";
+import LoadingSpinner from "./components/loading";
+import useLoading from "./hooks/useloading";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,14 +23,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const isLoading = useLoading();
   return (
     <html lang="en">
       <body className={`${inter.className} bg-slate-900`}>
-        <StrictMode>
-          <Navbar />
-          {children}
-          <Footer />
-        </StrictMode>
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          <StrictMode>
+            <Navbar />
+            {children}
+            <Footer />
+          </StrictMode>
+        )}
       </body>
     </html>
   );
