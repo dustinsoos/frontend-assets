@@ -38,7 +38,7 @@ export default function Cards() {
           <h3 className="  text-sky-500 text-3xl items-center font-semibold pt-8  md:pt-8  md:mb-0  lg:pt-64">
             What do we offer?
           </h3>
-          <h4 className=" hidden mb-4 md:pb-8  text-white text-2xl md:block">
+          <h4 className="  mb-4 md:pb-8  text-white text-2xl md:block">
             We are here to <span className="text-sky-500">help!</span>
           </h4>
         </div>
