@@ -33,7 +33,7 @@ export default function SearchBar({ data }) {
       <div className="flex items-center justify-center mb-8">
         <input
           type="text"
-          className="w-10/12 lg:w-1/2 border-2 p-2 text-lg border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md "
+          className="w-10/12 lg:w-1/2 border-2 p-2 md:text-lg border-slate-800 hover:border-sky-500  bg-slate-900 rounded-md text-sm "
           placeholder="HTML, CSS, JS, Framework, Library, Design, Animations"
           value={searchTerm}
           onChange={handleSearch}

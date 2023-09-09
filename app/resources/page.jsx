@@ -79,6 +79,14 @@ export default function Resources() {
       url: "https://fonts.google.com/",
     },
     {
+      img: "/images/tailwindcss.jpg",
+      name: "Tailwind Cheatsheet",
+      about:
+        "Tailwind CSS cheatsheet, a comprehensive guide for designing web interfaces efficiently",
+      for: "Tailwind, CSS, Cheatsheet",
+      url: "https://tailwindcomponents.com/cheatsheet/",
+    },
+    {
       img: "/images/webcode.jpg",
       name: "Webcode",
       about:
