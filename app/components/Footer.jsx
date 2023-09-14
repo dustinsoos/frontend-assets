@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -72,12 +73,12 @@ export default function Footer() {
           <h3 className="text-sm underline">Navigation</h3>
           {navItems.map((item) => (
             <li className="list-none" key={item.id}>
-              <a
+              <Link
                 className="relative after:bg-sky-500 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer text-xs text-slate-400"
                 href={item.link}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </div>

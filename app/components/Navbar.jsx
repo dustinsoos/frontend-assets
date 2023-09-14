@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className=" bg-slate-950/90 px-8 md:px-16 lg:px-32 xl:px-64 text-white fixed w-full z-30">
         <ul>
           <div className=" flex justify-between ">
-            <a href="/" className=" w-14 2xl:w-16  hover:opacity-80">
+            <Link href="/" className=" w-14 2xl:w-16  hover:opacity-80">
               <Image
                 src="/icon-frontend-asset.png"
                 width={100}
@@ -24,7 +24,7 @@ export default function Navbar() {
                 alt="Logo"
                 priority={true}
               />
-            </a>
+            </Link>
             <button
               className=" hover:opacity-80"
               onClick={() => setIsOpen(!isOpen)}
@@ -44,12 +44,12 @@ export default function Navbar() {
             <div className="  w-20 mx-auto grid items-center text-center gap-6 p-4 ">
               {navItems.map((item) => (
                 <li className="" key={item.id}>
-                  <a
+                  <Link
                     className="relative after:bg-sky-500 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
                     href={item.link}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </div>

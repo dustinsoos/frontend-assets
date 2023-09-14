@@ -6,6 +6,7 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import LoadingSpinner from "./components/loading";
 import useLoading from "./hooks/useloading";
+import Link from "next/link";
 
 export default function Home() {
   let isLoading = useLoading();
@@ -28,10 +29,10 @@ export default function Home() {
                 </h2>
                 <div className="flex gap-4 mt-8 justify-center lg:justify-start">
                   <button className=" border p-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white">
-                    <a href="/resources">Resources</a>
+                    <Link href="/resources">Resources</Link>
                   </button>
                   <button className=" border p-2 border-white hover:bg-white hover:text-sky-500">
-                    <a href="/recommend">Recommend</a>
+                    <Link href="/recommend">Recommend</Link>
                   </button>
                 </div>
               </div>
