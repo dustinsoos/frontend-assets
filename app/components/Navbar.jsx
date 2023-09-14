@@ -11,6 +11,10 @@ export default function Navbar() {
     { id: 2, label: "Resources", link: "/resources" },
     { id: 3, label: "Recommend", link: "/recommend" },
   ];
+
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
   return (
     <header>
       <nav className=" bg-slate-950/90 px-8 md:px-16 lg:px-32 xl:px-64 text-white fixed w-full z-30">
@@ -45,6 +49,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <li className="" key={item.id}>
                   <Link
+                    onClick={closeNavbar}
                     className="relative after:bg-sky-500 after:absolute after:h-1 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
                     href={item.link}
                   >
