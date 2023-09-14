@@ -42,7 +42,7 @@ export default function Cards() {
             We are here to <span className="text-sky-500">help!</span>
           </h4>
         </div>
-        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-2 md:gap-4 w-11/12 mx-auto">
+        <div className="  md:text-left flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-2 md:gap-4 w-11/12 mx-auto mb-16">
           {cardData.map((data) => (
             <div
               key={data.id}
