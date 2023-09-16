@@ -1,7 +1,13 @@
 **Frontend Assets**
-  - This project was something I was looking forward to making for a long time. As an aspiriring frontend software developer I wanted to give others who are learning or currently in the industry a platform to find/add & use the resources that I have found over the years that have helped me.
+**The Problem**
+You have one folder on your computer with all of your resources that you have found over the years while studying that are super helpful. You endlessly scroll through this folder to try and find a specific resource. You're also on google trying to find great resources to solve problems.
+<hr/>
+**This Solution**
+This is a open source project created by me as a platform for developers to jump in use the resources that I found helpful, but also a place for others to add resources of their own that they found useful. I implemented a way to filter | search | add | remove | and find resources by type. Example meaning Animations | React | CSS | Cheat Sheets | Etc. 
 
 **Live 🔗:** https://frontend-assets.vercel.app/
+
+<hr/>
 
 **Installation:** 
   - React
