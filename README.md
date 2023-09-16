@@ -1,4 +1,5 @@
 **Frontend Assets**
+<br>
 **The Problem**
 You have one folder on your computer with all of your resources that you have found over the years while studying that are super helpful. You endlessly scroll through this folder to try and find a specific resource. You're also on google trying to find great resources to solve problems.
 <hr/>
