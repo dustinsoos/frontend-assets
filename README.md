@@ -4,8 +4,9 @@ You have one folder on your computer with all of your resources that you have fo
 <hr/>
 <h2>This Solution</h2>
 This is a open source project created by me as a platform for developers to jump in use the resources that I found helpful, but also a place for others to add resources of their own that they found useful. I implemented a way to filter | search | add | remove | and find resources by type. Example meaning Animations | React | CSS | Cheat Sheets | Etc. 
-<br>
-**Live 🔗:** https://frontend-assets.vercel.app/
+
+
+<h3>Live 🔗:</h3> https://frontend-assets.vercel.app/
 
 <hr/>
 <h3>Installation:</h3>
