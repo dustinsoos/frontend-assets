@@ -8,7 +8,6 @@ This is a open source project created by me as a platform for developers to jump
 **Live 🔗:** https://frontend-assets.vercel.app/
 
 <hr/>
-<br>
 <h3>Installation:</h3>
 <ul>
   <li>React</li>
@@ -16,7 +15,6 @@ This is a open source project created by me as a platform for developers to jump
   <li>NextSEO</li>
   <li>TailwindCSS</li>
   </ul>
-<br>
 <h3>Usage:</h3>
   - This project is a frontend application that is used for the resources provided. Instead of having all of your resources in an endless folder I wanted to create a easy to search filter for specific needs.
 
