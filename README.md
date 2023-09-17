@@ -28,3 +28,6 @@ This is a open source project created by me as a platform for developers to jump
   - I used Vercel which is a great and easy way to deploy next applications.
 
 ![frontendassets](https://github.com/dustinsoos/frontend-assets/assets/106705486/2de1c295-27ab-4096-92c2-fc90aa59ae59)
+
+<h3>License</h3>
+  -MIT
