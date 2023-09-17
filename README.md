@@ -27,7 +27,9 @@ This is a open source project created by me as a platform for developers to jump
 <h2>Deployment:</h2>
   - I used Vercel which is a great and easy way to deploy next applications.
 
+<h2>License</h2>
+  - MIT
+<h2>Screenshot Preview</h2>
 ![frontendassets](https://github.com/dustinsoos/frontend-assets/assets/106705486/2de1c295-27ab-4096-92c2-fc90aa59ae59)
 
-<h2>License</h2>
-  -MIT
+
