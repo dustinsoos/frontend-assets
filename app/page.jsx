@@ -44,7 +44,7 @@ export default function Home() {
               <Image
                 src="/gif-homepage.gif"
                 width={600}
-                height={1000}
+                height={600}
                 alt="homepage-gif"
                 priority={true}
                 className="hidden lg:block p-1 bg-gradient-to-r from-sky-500 to-slate-400  lg:max-w-md 2xl:max-w-6xl rounded-3xl 2xl:w-1/2 "
