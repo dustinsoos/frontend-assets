@@ -20,6 +20,7 @@ $ npm install next-seo
 ```
 $ npm install -D tailwindcss
 $ npx tailwindcss init
+$ npm install -D prettier prettier-plugin-tailwindcss
 ```
 
   
