@@ -19,15 +19,20 @@ export default function Home() {
           <NextSeo title="Home Page" description="Frontend Assets" />
           <section className=" min-h-screen bg-slate-900 text-white bg-gradient-to-b from-sky-500/10 from-70%  to-slate-900/10 to-100%">
             <div className=" px-8 md:px-16 lg:px-32 xl:px-64 flex h-screen items-center justify-around ">
-              <div className="text-center lg:text-left lg:w-1/2 xl:w-2/5 ">
-                <h1 className=" text-4xl text-sky-500 font-bold mb-4 ">
-                  Frontend Assets
+              <div className="text-center lg:text-left md:w-9/12  lg:w-3/5  ">
+                <h1 className="text-6xl  lg:text-7xl 2xl:text-8xl text-sky-500 font-bold mb-4 ">
+                  <span className="bg-gradient-to-r from-sky-500  to-slate-400 inline-block text-transparent bg-clip-text">
+                    Frontend
+                  </span>{" "}
+                  <span className="bg-gradient-to-r from-sky-500  to-slate-400 inline-block text-transparent bg-clip-text">
+                    Assets
+                  </span>
                 </h1>
-                <h2 className="text-xl">
+                <h2 className="text-lg lg:w-3/4  xl:w-9/12 2xl:w-7/12">
                   Empowering Frontend Developers with Essential Resources for a
                   Journey of Coding Excellence
                 </h2>
-                <div className="flex gap-4 mt-8 justify-center lg:justify-start">
+                <div className="flex gap-4 mt-8 justify-center lg:justify-start ">
                   <button className=" border p-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white">
                     <Link href="/resources">Resources</Link>
                   </button>
@@ -38,11 +43,11 @@ export default function Home() {
               </div>
               <Image
                 src="/gif-homepage.gif"
-                width={500}
-                height={400}
+                width={600}
+                height={1000}
                 alt="homepage-gif"
                 priority={true}
-                className="hidden lg:block  rounded-3xl border-2 border-sky-500 lg:max-w-sm 2xl:max-w-md"
+                className="hidden lg:block p-1 bg-gradient-to-r from-sky-500 to-slate-400  lg:max-w-md 2xl:max-w-6xl rounded-3xl 2xl:w-1/2 "
               />
             </div>
           </section>
