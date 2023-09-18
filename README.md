@@ -6,16 +6,23 @@ You have one folder on your computer with all of your resources that you have fo
 This is a open source project created by me as a platform for developers to jump in use the resources that I found helpful, but also a place for others to add resources of their own that they found useful. I implemented a way to filter | search | add | remove | and find resources by type. Example meaning Animations | React | CSS | Cheat Sheets | Etc. 
 
 
+
 <h2>Live 🔗:</h2> https://frontend-assets.vercel.app/
 
-
 <h2>Installation:</h2>
-<ul>
-  <li>React</li>
-  <li>NextJS</li>
-  <li>NextSEO</li>
-  <li>TailwindCSS</li>
-  </ul>
+
+``` 
+$ npx create-next-app@latest
+```
+``` 
+$ npm install next-seo
+```
+```
+$ npm install -D tailwindcss
+$ npx tailwindcss init
+```
+
+  
 <h2>Usage:</h3>
   - This project is a frontend application that is used for the resources provided. Instead of having all of your resources in an endless folder I wanted to create a easy to search filter for specific needs.
 
@@ -32,5 +39,7 @@ This is a open source project created by me as a platform for developers to jump
 <h2>Screenshot Preview</h2>
 
 ![frontendassets](https://github.com/dustinsoos/frontend-assets/assets/106705486/2de1c295-27ab-4096-92c2-fc90aa59ae59)
+
+
 
 
