@@ -12,11 +12,10 @@ export default function SearchBar({ data }) {
 
     // Filter the data based on the user's input
     const filtered = data.filter((item) => {
-      const { name, about, for: purpose } = item;
+      const { name, for: purpose } = item;
 
       return (
         name.toLowerCase().includes(searchText) ||
-        about.toLowerCase().includes(searchText) ||
         purpose.toLowerCase().includes(searchText)
       );
     });
